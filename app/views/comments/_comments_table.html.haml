@@ -1,0 +1,12 @@
+
+
+.panel.panel-info 
+
+	.panel-heading
+		#{@picture.comments.count} Comments 
+
+	%table.table.table-striped
+		%tbody
+			- @picture.comments.each do |comment|
+				%tr 
+					%td= comment.content

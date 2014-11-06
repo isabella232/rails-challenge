@@ -1,0 +1,7 @@
+
+
+$("#comments").html("#{escape_javascript(render('comments/comments_table'))}")
+
+$("#comment_form").html("#{escape_javascript(render('comments/comment'))}")	
+
+$("#comment_content").val('')

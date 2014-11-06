@@ -1,0 +1,30 @@
+.row.col-lg-12
+
+  %h1 Pictures
+  = render 'layouts/search'
+  - if @pictures.any?
+ 
+    %table.table.table-hover
+      %tbody 
+        %tr
+          %th Title
+          %th Picture
+          %th
+          %th
+          %th
+
+        - @pictures.each do |picture|
+          %tr#picture
+            %td= picture.title
+            %td= image_tag picture.file.to_s, width: "150px"
+            %td= link_to 'Show', picture
+            %td= link_to 'Edit', edit_picture_path(picture)
+            %td= link_to 'Delete', picture, :method => :delete, :data => { :confirm => 'This can\'t be undone' }  
+
+      -# = will_paginate @pictures 
+  - else 
+
+    %h2.h2.well No Pictures! Try uploading some.    
+
+  %br
+    = link_to '>>New picture<<', new_picture_path, class:"btn btn-large btn-success "

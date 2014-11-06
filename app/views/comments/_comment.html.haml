@@ -1,0 +1,11 @@
+
+
+.well.col-lg-12
+	=form_for(Comment.new, remote: true) do |f|
+
+		.col-lg-8.field
+			= f.hidden_field :picture_id, value: @picture.id
+			= f.text_field :content, placeholder: "Enter comment...", rows: "1",class: "form-control"
+
+		.col-lg-4.field
+			=f.submit "Send", class: 'btn btn-large btn-primary'

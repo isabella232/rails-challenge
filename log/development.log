@@ -1,0 +1,2437 @@
+[datamapper] Setting up the "development" environment:
+[datamapper] Setting up :default repository: '/Users/raphaelmiranda/projects/rails-challenge/db/samplerb_development.db' on sqlite
+[datamapper] Setting up the "development" environment:
+[datamapper] Setting up :default repository: '/Users/raphaelmiranda/projects/rails-challenge/db/samplerb_development.db' on sqlite
+[datamapper] Setting up the "development" environment:
+[datamapper] Setting up :default repository: '/Users/raphaelmiranda/projects/rails-challenge/db/samplerb_development.db' on sqlite
+[datamapper] Setting up the "development" environment:
+[datamapper] Setting up :default repository: '/Users/raphaelmiranda/projects/rails-challenge/db/samplerb_development.db' on sqlite
+[datamapper] Setting up the "development" environment:
+[datamapper] Setting up :default repository: '/Users/raphaelmiranda/projects/rails-challenge/db/samplerb_development.db' on sqlite
+[datamapper] Setting up the "development" environment:
+[datamapper] Setting up :default repository: '/Users/raphaelmiranda/projects/rails-challenge/db/samplerb_development.db' on sqlite
+[datamapper] Setting up the "development" environment:
+[datamapper] Setting up :default repository: '/Users/raphaelmiranda/projects/rails-challenge/db/samplerb_development.db' on sqlite
+[datamapper] Setting up the "development" environment:
+[datamapper] Setting up :default repository: '/Users/raphaelmiranda/projects/rails-challenge/db/samplerb_development.db' on sqlite
+  [1m[36mSQL (0.208ms)[0m  [1mPRAGMA table_info("comments")[0m
+  [1m[35mSQL (0.015ms)[0m  SELECT sqlite_version(*)
+  [1m[36mSQL (1.469ms)[0m  [1mCREATE TABLE "comments" ("id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "content" VARCHAR(50), "picture_id" INTEGER NOT NULL)[0m
+  [1m[35mSQL (1.152ms)[0m  CREATE INDEX "index_comments_picture" ON "comments" ("picture_id")
+  [1m[36mSQL (0.013ms)[0m  [1mPRAGMA table_info("pictures")[0m
+  [1m[35mSQL (1.376ms)[0m  CREATE TABLE "pictures" ("id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "title" VARCHAR(50), "description" TEXT, "file" VARCHAR(255))
+[datamapper] Setting up the "development" environment:
+[datamapper] Setting up :default repository: '/Users/raphaelmiranda/projects/rails-challenge/db/samplerb_development.db' on sqlite
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-11-05 22:00:11 -0200
+Served asset /rails.png - 200 OK (37ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2014-11-05 22:00:35 -0200
+Processing by PicturesController#index as HTML
+Completed 500 Internal Server Error in 57.8ms
+
+ActionView::MissingTemplate (Missing template pictures/index, application/index with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/raphaelmiranda/projects/rails-challenge/app/views"
+):
+  app/controllers/pictures_controller.rb:6:in `index'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (5.3ms)
+[datamapper] Setting up the "development" environment:
+[datamapper] Setting up :default repository: '/Users/raphaelmiranda/projects/rails-challenge/db/samplerb_development.db' on sqlite
+
+
+Started GET "/pictures" for 127.0.0.1 at 2014-11-05 22:04:20 -0200
+Processing by PicturesController#index as HTML
+  Rendered layouts/_search.html.haml (2.0ms)
+  [1m[36mSQL (0.201ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id" LIMIT 5[0m
+  Rendered pictures/index.html.haml within layouts/application (52.5ms)
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/3d2bbc77c5698c1a6cfae8999872ac5d01d13f66/comments.css.scssc: can't dump anonymous class #<Class:0x007ff59d8cb410>
+Compiled comments.css  (14ms)  (pid 37710)
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/3d2bbc77c5698c1a6cfae8999872ac5d01d13f66/pictures.css.scssc: can't dump anonymous class #<Class:0x007ff59d8cb410>
+Completed 500 Internal Server Error in 150.9ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+Load path: Sass::Rails::Importer(/Users/raphaelmiranda/projects/rails-challenge/app/assets/stylesheets/pictures.css.scss)
+  (in /Users/raphaelmiranda/projects/rails-challenge/app/assets/stylesheets/pictures.css.scss)):
+    2: %html
+    3:   %head
+    4:     %title Photobox
+    5:     = stylesheet_link_tag    "application", :media => "all"
+    6:     = javascript_include_tag "application"
+    7:     = csrf_meta_tags
+    8:   %body
+  app/assets/stylesheets/pictures.css.scss:4
+  app/views/layouts/application.html.haml:5:in `_app_views_layouts_application_html_haml___3910059239373665943_70346430308260'
+  app/controllers/pictures_controller.rb:6:in `index'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.8ms)
+[datamapper] Setting up the "development" environment:
+[datamapper] Setting up :default repository: '/Users/raphaelmiranda/projects/rails-challenge/db/samplerb_development.db' on sqlite
+
+
+Started GET "/pictures" for 127.0.0.1 at 2014-11-05 22:05:53 -0200
+Processing by PicturesController#index as HTML
+  Rendered layouts/_search.html.haml (2.7ms)
+  [1m[36mSQL (0.216ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id" LIMIT 5[0m
+  Rendered pictures/index.html.haml within layouts/application (41.3ms)
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/3d2bbc77c5698c1a6cfae8999872ac5d01d13f66/pictures.css.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/6afecdb0488748bfd2e37ec32c146e6221e1c79e/_bootstrap.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_variables.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_mixins.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_hide-text.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_opacity.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_image.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_labels.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_reset-filter.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_resize.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_responsive-visibility.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_size.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_tab-focus.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_text-emphasis.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_text-overflow.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_vendor-prefixes.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_alerts.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_buttons.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_panels.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_pagination.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_list-group.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_nav-divider.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_forms.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_progress-bar.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_table-row.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_background-variant.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_border-radius.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_gradients.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_clearfix.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_center-block.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_nav-vertical-align.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_grid-framework.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/83bb67e8cefd372924c9d6a89700740aacaf77e5/_grid.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_normalize.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_print.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_glyphicons.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_scaffolding.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_type.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_code.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_grid.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_tables.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_forms.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_buttons.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_component-animations.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_dropdowns.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_button-groups.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_input-groups.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_navs.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_navbar.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_pagination.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_pager.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_labels.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_badges.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_jumbotron.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_thumbnails.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_alerts.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_progress-bars.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_media.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_list-group.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_panels.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_responsive-embed.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_wells.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_close.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_modals.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_tooltip.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_popovers.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_carousel.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_utilities.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/df29fcf70cf15ee77820bd91a1bb27267dd3af44/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Compiled pictures.css  (3233ms)  (pid 38792)
+Warning. Error encountered while saving cache /Users/raphaelmiranda/projects/rails-challenge/tmp/cache/sass/3d2bbc77c5698c1a6cfae8999872ac5d01d13f66/scaffolds.css.scssc: can't dump anonymous class #<Class:0x007fda65788f60>
+Compiled scaffolds.css  (4ms)  (pid 38792)
+Compiled application.css  (3318ms)  (pid 38792)
+Compiled jquery.js  (2ms)  (pid 38792)
+Compiled jquery_ujs.js  (0ms)  (pid 38792)
+Compiled comments.js  (685ms)  (pid 38792)
+Compiled pictures.js  (134ms)  (pid 38792)
+Compiled application.js  (927ms)  (pid 38792)
+Completed 200 OK in 4381.6ms (Views: 4380.2ms | Models: 0.216ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 22:05:57 -0200
+Served asset /application.css - 200 OK (71ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-11-05 22:05:57 -0200
+Served asset /comments.css - 200 OK (2ms)
+
+
+Started GET "/assets/pictures.css?body=1" for 127.0.0.1 at 2014-11-05 22:05:57 -0200
+Served asset /pictures.css - 200 OK (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:05:57 -0200
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-05 22:05:57 -0200
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:05:57 -0200
+Served asset /jquery.js - 200 OK (6ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:05:57 -0200
+Served asset /comments.js - 200 OK (2ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:05:57 -0200
+Served asset /pictures.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:05:57 -0200
+Served asset /application.js - 200 OK (7ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2014-11-05 22:05:57 -0200
+Compiled bootstrap.js  (0ms)  (pid 38792)
+Served asset /bootstrap - 200 OK (33ms)
+
+
+Started GET "/pictures/new" for 127.0.0.1 at 2014-11-05 22:06:06 -0200
+Processing by PicturesController#new as HTML
+  Rendered pictures/_form.html.haml (5.5ms)
+  Rendered pictures/new.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 67.2ms (Views: 66.7ms | Models: 0.000ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:06:06 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:06:06 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:06:06 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:06:06 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-11-05 22:06:06 -0200
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:06:06 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 22:06:06 -0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pictures.css?body=1" for 127.0.0.1 at 2014-11-05 22:06:06 -0200
+Served asset /pictures.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-05 22:06:06 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started POST "/pictures" for 127.0.0.1 at 2014-11-05 22:06:18 -0200
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "picture"=>{"title"=>"teste", "description"=>"teste", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fda65075f48 @original_filename="27-zJxKHhO.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"picture[file]\"; filename=\"27-zJxKHhO.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/t2/hxq7ws5j7czd834v99lh5sd00000gn/T/RackMultipart20141105-38792-4jrne2>>}, "commit"=>"Save"}
+  [1m[35mSQL (1.481ms)[0m  INSERT INTO "pictures" ("title", "description", "file") VALUES ('teste', 'teste', '27-zJxKHhO.jpg')
+Redirected to http://localhost:3000/pictures/1
+Completed 302 Found in 21.0ms
+
+
+Started GET "/pictures/1" for 127.0.0.1 at 2014-11-05 22:06:18 -0200
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.040ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.041ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"
+  Rendered comments/_comment.html.haml (3.6ms)
+  [1m[36mSQL (0.064ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1[0m
+  [1m[35mSQL (0.056ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (5.0ms)
+  Rendered pictures/show.html.haml within layouts/application (16.0ms)
+Completed 200 OK in 29.9ms (Views: 27.3ms | Models: 1.682ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:06:19 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:06:19 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:06:19 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:06:19 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 22:06:19 -0200
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-11-05 22:06:19 -0200
+Served asset /comments.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-05 22:06:19 -0200
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:06:19 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.css?body=1" for 127.0.0.1 at 2014-11-05 22:06:19 -0200
+Served asset /pictures.css - 200 OK (1ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-11-05 22:06:27 -0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "comment"=>{"picture_id"=>"1", "content"=>"yeah"}, "commit"=>"Post"}
+  [1m[36mSQL (0.066ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.041ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"
+  [1m[36mSQL (2.585ms)[0m  [1mINSERT INTO "comments" ("content", "picture_id") VALUES ('yeah', 1)[0m
+  [1m[35mSQL (0.047ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1
+  [1m[36mSQL (0.090ms)[0m  [1mSELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"[0m
+  Rendered comments/_comments_table.html.haml (5.4ms)
+  Rendered comments/_comment.html.haml (3.4ms)
+  Rendered comments/create.js.haml (12.5ms)
+Completed 200 OK in 26.8ms (Views: 16.4ms | Models: 2.829ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-11-05 22:06:33 -0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "comment"=>{"picture_id"=>"1", "content"=>"dope"}, "commit"=>"Post"}
+  [1m[35mSQL (0.046ms)[0m  SELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1
+  [1m[36mSQL (0.043ms)[0m  [1mSELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"[0m
+  [1m[35mSQL (1.214ms)[0m  INSERT INTO "comments" ("content", "picture_id") VALUES ('dope', 1)
+  [1m[36mSQL (0.040ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1[0m
+  [1m[35mSQL (0.027ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (1.9ms)
+  Rendered comments/_comment.html.haml (2.0ms)
+  Rendered comments/create.js.haml (5.5ms)
+Completed 200 OK in 16.3ms (Views: 7.1ms | Models: 1.370ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-11-05 22:06:40 -0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "comment"=>{"picture_id"=>"1", "content"=>"e"}, "commit"=>"Post"}
+  [1m[36mSQL (0.049ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.042ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"
+  [1m[36mSQL (1.212ms)[0m  [1mINSERT INTO "comments" ("content", "picture_id") VALUES ('e', 1)[0m
+  [1m[35mSQL (0.051ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1
+  [1m[36mSQL (0.028ms)[0m  [1mSELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"[0m
+  Rendered comments/_comments_table.html.haml (2.1ms)
+  Rendered comments/_comment.html.haml (2.1ms)
+  Rendered comments/create.js.haml (6.4ms)
+Completed 200 OK in 17.3ms (Views: 8.6ms | Models: 1.382ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-11-05 22:06:42 -0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "comment"=>{"picture_id"=>"1", "content"=>"e"}, "commit"=>"Post"}
+  [1m[35mSQL (0.046ms)[0m  SELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1
+  [1m[36mSQL (0.047ms)[0m  [1mSELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"[0m
+  [1m[35mSQL (1.381ms)[0m  INSERT INTO "comments" ("content", "picture_id") VALUES ('e', 1)
+  [1m[36mSQL (0.046ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1[0m
+  [1m[35mSQL (0.041ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (3.6ms)
+  Rendered comments/_comment.html.haml (2.3ms)
+  Rendered comments/create.js.haml (9.1ms)
+Completed 200 OK in 18.8ms (Views: 10.6ms | Models: 1.561ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-11-05 22:06:44 -0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "comment"=>{"picture_id"=>"1", "content"=>"ddddd"}, "commit"=>"Post"}
+  [1m[36mSQL (0.042ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.040ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"
+  [1m[36mSQL (1.296ms)[0m  [1mINSERT INTO "comments" ("content", "picture_id") VALUES ('ddddd', 1)[0m
+  [1m[35mSQL (0.043ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1
+  [1m[36mSQL (0.031ms)[0m  [1mSELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"[0m
+  Rendered comments/_comments_table.html.haml (3.0ms)
+  Rendered comments/_comment.html.haml (2.3ms)
+  Rendered comments/create.js.haml (8.1ms)
+Completed 200 OK in 18.8ms (Views: 10.7ms | Models: 1.452ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-11-05 22:06:47 -0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "comment"=>{"picture_id"=>"1", "content"=>"erererer"}, "commit"=>"Post"}
+  [1m[35mSQL (0.052ms)[0m  SELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1
+  [1m[36mSQL (0.073ms)[0m  [1mSELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"[0m
+  [1m[35mSQL (1.444ms)[0m  INSERT INTO "comments" ("content", "picture_id") VALUES ('erererer', 1)
+  [1m[36mSQL (0.041ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1[0m
+  [1m[35mSQL (0.032ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (3.5ms)
+  Rendered comments/_comment.html.haml (2.0ms)
+  Rendered comments/create.js.haml (7.8ms)
+Completed 200 OK in 18.5ms (Views: 9.4ms | Models: 1.642ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-11-05 22:06:50 -0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "comment"=>{"picture_id"=>"1", "content"=>"vddfdfdfdf"}, "commit"=>"Post"}
+  [1m[36mSQL (0.054ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.055ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"
+  [1m[36mSQL (1.327ms)[0m  [1mINSERT INTO "comments" ("content", "picture_id") VALUES ('vddfdfdfdf', 1)[0m
+  [1m[35mSQL (0.055ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1
+  [1m[36mSQL (0.464ms)[0m  [1mSELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"[0m
+  Rendered comments/_comments_table.html.haml (5.6ms)
+  Rendered comments/_comment.html.haml (2.0ms)
+  Rendered comments/create.js.haml (9.8ms)
+Completed 200 OK in 20.5ms (Views: 11.1ms | Models: 1.955ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-11-05 22:06:54 -0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "comment"=>{"picture_id"=>"1", "content"=>"ccxcxcxc"}, "commit"=>"Post"}
+  [1m[35mSQL (0.057ms)[0m  SELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1
+  [1m[36mSQL (0.042ms)[0m  [1mSELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"[0m
+  [1m[35mSQL (1.393ms)[0m  INSERT INTO "comments" ("content", "picture_id") VALUES ('ccxcxcxc', 1)
+  [1m[36mSQL (0.046ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1[0m
+  [1m[35mSQL (0.034ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (3.4ms)
+  Rendered comments/_comment.html.haml (1.6ms)
+  Rendered comments/create.js.haml (7.1ms)
+Completed 200 OK in 17.5ms (Views: 9.3ms | Models: 1.572ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-11-05 22:06:58 -0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "comment"=>{"picture_id"=>"1", "content"=>"sdsdsdsds"}, "commit"=>"Post"}
+  [1m[36mSQL (0.049ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.040ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"
+  [1m[36mSQL (1.525ms)[0m  [1mINSERT INTO "comments" ("content", "picture_id") VALUES ('sdsdsdsds', 1)[0m
+  [1m[35mSQL (0.068ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1
+  [1m[36mSQL (0.049ms)[0m  [1mSELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"[0m
+  Rendered comments/_comments_table.html.haml (5.3ms)
+  Rendered comments/_comment.html.haml (1.8ms)
+  Rendered comments/create.js.haml (9.2ms)
+Completed 200 OK in 18.8ms (Views: 10.8ms | Models: 1.731ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-11-05 22:07:01 -0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "comment"=>{"picture_id"=>"1", "content"=>"ewewewew"}, "commit"=>"Post"}
+  [1m[35mSQL (0.041ms)[0m  SELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1
+  [1m[36mSQL (0.040ms)[0m  [1mSELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"[0m
+  [1m[35mSQL (1.365ms)[0m  INSERT INTO "comments" ("content", "picture_id") VALUES ('ewewewew', 1)
+  [1m[36mSQL (0.053ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1[0m
+  [1m[35mSQL (0.026ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (3.4ms)
+  Rendered comments/_comment.html.haml (2.1ms)
+  Rendered comments/create.js.haml (8.1ms)
+Completed 200 OK in 17.7ms (Views: 10.3ms | Models: 1.525ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-11-05 22:07:04 -0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "comment"=>{"picture_id"=>"1", "content"=>"qwqwqwqwqw"}, "commit"=>"Post"}
+  [1m[36mSQL (0.058ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.043ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"
+  [1m[36mSQL (1.322ms)[0m  [1mINSERT INTO "comments" ("content", "picture_id") VALUES ('qwqwqwqwqw', 1)[0m
+  [1m[35mSQL (0.044ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1
+  [1m[36mSQL (0.033ms)[0m  [1mSELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"[0m
+  Rendered comments/_comments_table.html.haml (5.8ms)
+  Rendered comments/_comment.html.haml (2.4ms)
+  Rendered comments/create.js.haml (10.4ms)
+Completed 200 OK in 19.7ms (Views: 11.9ms | Models: 1.500ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-11-05 22:07:07 -0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "comment"=>{"picture_id"=>"1", "content"=>"qwqwqwqwq"}, "commit"=>"Post"}
+  [1m[35mSQL (0.049ms)[0m  SELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1
+  [1m[36mSQL (0.052ms)[0m  [1mSELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"[0m
+  [1m[35mSQL (1.495ms)[0m  INSERT INTO "comments" ("content", "picture_id") VALUES ('qwqwqwqwq', 1)
+  [1m[36mSQL (0.053ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1[0m
+  [1m[35mSQL (0.052ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (5.4ms)
+  Rendered comments/_comment.html.haml (2.1ms)
+  Rendered comments/create.js.haml (10.0ms)
+Completed 200 OK in 21.6ms (Views: 12.2ms | Models: 1.701ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2014-11-05 22:07:12 -0200
+Processing by PicturesController#index as HTML
+  Rendered layouts/_search.html.haml (1.3ms)
+  [1m[36mSQL (0.055ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id" LIMIT 5[0m
+  Rendered pictures/index.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 11.8ms (Views: 11.1ms | Models: 0.055ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-11-05 22:07:12 -0200
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.css?body=1" for 127.0.0.1 at 2014-11-05 22:07:12 -0200
+Served asset /pictures.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:07:12 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-05 22:07:12 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:07:12 -0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:07:12 -0200
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:07:12 -0200
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:07:12 -0200
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 22:07:12 -0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/pictures/1" for 127.0.0.1 at 2014-11-05 22:07:15 -0200
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSQL (0.042ms)[0m  SELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1
+  [1m[36mSQL (0.049ms)[0m  [1mSELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"[0m
+  Rendered comments/_comment.html.haml (1.8ms)
+  [1m[35mSQL (0.050ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1
+  [1m[36mSQL (0.026ms)[0m  [1mSELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"[0m
+  Rendered comments/_comments_table.html.haml (3.7ms)
+  Rendered pictures/show.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 18.4ms (Views: 16.3ms | Models: 0.167ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 22:07:15 -0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-11-05 22:07:15 -0200
+Served asset /comments.css - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.css?body=1" for 127.0.0.1 at 2014-11-05 22:07:15 -0200
+Served asset /pictures.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:07:15 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-05 22:07:15 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:07:15 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:07:15 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:07:15 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:07:15 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-11-05 22:07:57 -0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "comment"=>{"picture_id"=>"1", "content"=>"d"}, "commit"=>"Post"}
+  [1m[35mSQL (0.051ms)[0m  SELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1
+  [1m[36mSQL (0.056ms)[0m  [1mSELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"[0m
+  [1m[35mSQL (3.048ms)[0m  INSERT INTO "comments" ("content", "picture_id") VALUES ('d', 1)
+  [1m[36mSQL (0.056ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1[0m
+  [1m[35mSQL (0.037ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (8.2ms)
+  Rendered comments/_comment.html.haml (2.6ms)
+  Rendered comments/create.js.haml (13.7ms)
+Completed 200 OK in 27.9ms (Views: 16.1ms | Models: 3.248ms)
+
+
+Started GET "/pictures/1" for 127.0.0.1 at 2014-11-05 22:08:03 -0200
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.051ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.044ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"
+  Rendered comments/_comment.html.haml (1.4ms)
+  [1m[36mSQL (0.060ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1[0m
+  [1m[35mSQL (0.062ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (5.8ms)
+  Rendered pictures/show.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 23.1ms (Views: 20.3ms | Models: 0.217ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 22:08:03 -0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-05 22:08:03 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:08:03 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:08:03 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-11-05 22:08:03 -0200
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.css?body=1" for 127.0.0.1 at 2014-11-05 22:08:03 -0200
+Served asset /pictures.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:08:03 -0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:08:03 -0200
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:08:03 -0200
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/pictures/1" for 127.0.0.1 at 2014-11-05 22:11:32 -0200
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.263ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.053ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"
+  Rendered comments/_comment.html.haml (1.5ms)
+  [1m[36mSQL (0.045ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1[0m
+  [1m[35mSQL (0.033ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (3.9ms)
+  Rendered pictures/show.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 27.5ms (Views: 23.7ms | Models: 0.394ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 22:11:32 -0200
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-11-05 22:11:32 -0200
+Served asset /comments.css - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.css?body=1" for 127.0.0.1 at 2014-11-05 22:11:32 -0200
+Served asset /pictures.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-05 22:11:32 -0200
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:11:32 -0200
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:11:32 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:11:32 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:11:32 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2014-11-05 22:11:32 -0200
+Served asset /bootstrap - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:11:32 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures/1" for 127.0.0.1 at 2014-11-05 22:11:54 -0200
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.058ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.082ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"
+  Rendered comments/_comment.html.haml (1.2ms)
+  [1m[36mSQL (0.051ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1[0m
+  [1m[35mSQL (0.037ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (4.0ms)
+  Rendered pictures/show.html.haml within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 73.3ms
+
+ActionView::Template::Error (Illegal element: classes and ids must have values.):
+    2: %html
+    3:   %head
+    4:     %title Challenge
+    5:     ##= stylesheet_link_tag    "application", :media => "all"
+    6:     = javascript_include_tag "application"
+    7:     = csrf_meta_tags
+    8:   %body
+  app/views/layouts/application.html.haml:5
+  app/controllers/pictures_controller.rb:22:in `show'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.6ms)
+
+
+Started GET "/pictures/1" for 127.0.0.1 at 2014-11-05 22:12:01 -0200
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.040ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.037ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"
+  Rendered comments/_comment.html.haml (1.1ms)
+  [1m[36mSQL (0.052ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1[0m
+  [1m[35mSQL (0.037ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (5.5ms)
+  Rendered pictures/show.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 19.7ms (Views: 17.8ms | Models: 0.336ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:12:01 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:12:01 -0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:12:01 -0200
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:12:01 -0200
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:12:01 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-11-05 22:12:16 -0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "comment"=>{"picture_id"=>"1", "content"=>"ioioi"}, "commit"=>"Post"}
+  [1m[36mSQL (0.098ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.057ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"
+  [1m[36mSQL (1.468ms)[0m  [1mINSERT INTO "comments" ("content", "picture_id") VALUES ('ioioi', 1)[0m
+  [1m[35mSQL (0.043ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1
+  [1m[36mSQL (0.025ms)[0m  [1mSELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"[0m
+  Rendered comments/_comments_table.html.haml (5.7ms)
+  Rendered comments/_comment.html.haml (1.7ms)
+  Rendered comments/create.js.haml (9.3ms)
+Completed 200 OK in 20.3ms (Views: 10.8ms | Models: 1.691ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-11-05 22:12:21 -0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "comment"=>{"picture_id"=>"1", "content"=>"ooooo"}, "commit"=>"Post"}
+  [1m[35mSQL (0.087ms)[0m  SELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1
+  [1m[36mSQL (0.039ms)[0m  [1mSELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"[0m
+  [1m[35mSQL (1.312ms)[0m  INSERT INTO "comments" ("content", "picture_id") VALUES ('ooooo', 1)
+  [1m[36mSQL (0.044ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1[0m
+  [1m[35mSQL (0.025ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (6.4ms)
+  Rendered comments/_comment.html.haml (1.6ms)
+  Rendered comments/create.js.haml (10.4ms)
+Completed 200 OK in 19.4ms (Views: 11.9ms | Models: 1.507ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2014-11-05 22:12:25 -0200
+Processing by PicturesController#index as HTML
+  Rendered layouts/_search.html.haml (1.1ms)
+  [1m[36mSQL (0.057ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id" LIMIT 5[0m
+  Rendered pictures/index.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 9.6ms (Views: 8.8ms | Models: 0.057ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:12:25 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:12:25 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:12:25 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:12:25 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:12:25 -0200
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2014-11-05 22:13:50 -0200
+Processing by PicturesController#index as HTML
+  Rendered layouts/_search.html.haml (0.9ms)
+  [1m[35mSQL (0.196ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id" LIMIT 5
+  Rendered pictures/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 9.5ms (Views: 8.7ms | Models: 0.196ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:13:50 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:13:50 -0200
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:13:50 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:13:50 -0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:13:50 -0200
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/pictures/1" for 127.0.0.1 at 2014-11-05 22:13:52 -0200
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.050ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.052ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"
+  Rendered comments/_comment.html.haml (3.5ms)
+  [1m[36mSQL (0.055ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1[0m
+  [1m[35mSQL (0.062ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (8.6ms)
+  Rendered pictures/show.html.haml within layouts/application (18.1ms)
+Completed 200 OK in 25.6ms (Views: 22.8ms | Models: 0.219ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:13:52 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:13:52 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:13:52 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:13:52 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:13:52 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures/1" for 127.0.0.1 at 2014-11-05 22:14:23 -0200
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.039ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.038ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"
+  Rendered comments/_comment.html.haml (1.2ms)
+  [1m[36mSQL (0.054ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1[0m
+  [1m[35mSQL (0.037ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (6.1ms)
+  Rendered pictures/show.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 17.4ms (Views: 15.6ms | Models: 0.168ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:23 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:23 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:23 -0200
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:23 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:23 -0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2014-11-05 22:14:27 -0200
+Processing by PicturesController#index as HTML
+  Rendered layouts/_search.html.haml (3.1ms)
+  [1m[36mSQL (0.043ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id" LIMIT 5[0m
+  Rendered pictures/index.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 15.2ms (Views: 14.5ms | Models: 0.043ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:27 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:27 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:27 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:27 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:27 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures/1/edit" for 127.0.0.1 at 2014-11-05 22:14:30 -0200
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSQL (0.042ms)[0m  SELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1
+  [1m[36mSQL (0.040ms)[0m  [1mSELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"[0m
+  Rendered pictures/_form.html.haml (3.5ms)
+  Rendered pictures/edit.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 24.4ms (Views: 22.9ms | Models: 0.082ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:30 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:30 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:30 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:30 -0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:30 -0200
+Served asset /application.js - 200 OK (0ms)
+
+
+Started PUT "/pictures/1" for 127.0.0.1 at 2014-11-05 22:14:34 -0200
+Processing by PicturesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "picture"=>{"title"=>"teste", "description"=>"testessssss"}, "commit"=>"Save", "id"=>"1"}
+  [1m[35mSQL (0.040ms)[0m  SELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1
+  [1m[36mSQL (0.032ms)[0m  [1mSELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"[0m
+  [1m[35mSQL (1.227ms)[0m  UPDATE "pictures" SET "description" = 'testessssss' WHERE "id" = 1
+Redirected to http://localhost:3000/pictures/1
+Completed 302 Found in 6.1ms
+
+
+Started GET "/pictures/1" for 127.0.0.1 at 2014-11-05 22:14:34 -0200
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.042ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.039ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"
+  Rendered comments/_comment.html.haml (1.1ms)
+  [1m[36mSQL (0.036ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1[0m
+  [1m[35mSQL (0.023ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (3.5ms)
+  Rendered pictures/show.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 13.0ms (Views: 11.4ms | Models: 1.439ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:34 -0200
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:34 -0200
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:34 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:34 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:14:34 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures/1" for 127.0.0.1 at 2014-11-05 22:15:57 -0200
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.170ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.036ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"
+  Rendered comments/_comment.html.haml (1.1ms)
+  [1m[36mSQL (0.049ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1[0m
+  [1m[35mSQL (0.036ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (6.1ms)
+  Rendered pictures/show.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 17.7ms (Views: 15.4ms | Models: 0.291ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:15:57 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:15:57 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:15:57 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:15:57 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:15:57 -0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2014-11-05 22:16:02 -0200
+Processing by PicturesController#index as HTML
+  Rendered layouts/_search.html.haml (0.9ms)
+  [1m[36mSQL (0.050ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id" LIMIT 5[0m
+  Rendered pictures/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 13.5ms (Views: 12.8ms | Models: 0.050ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:16:02 -0200
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:16:02 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:16:02 -0200
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:16:02 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:16:02 -0200
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/pictures/1" for 127.0.0.1 at 2014-11-05 22:16:12 -0200
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSQL (0.041ms)[0m  SELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1
+  [1m[36mSQL (0.038ms)[0m  [1mSELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"[0m
+  Rendered comments/_comment.html.haml (2.1ms)
+  [1m[35mSQL (0.040ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1
+  [1m[36mSQL (0.024ms)[0m  [1mSELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"[0m
+  Rendered comments/_comments_table.html.haml (4.2ms)
+  Rendered pictures/show.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 17.8ms (Views: 15.8ms | Models: 0.143ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:16:12 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:16:12 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:16:12 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:16:12 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:16:12 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2014-11-05 22:16:18 -0200
+Processing by PicturesController#index as HTML
+  Rendered layouts/_search.html.haml (0.9ms)
+  [1m[35mSQL (0.040ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id" LIMIT 5
+  Rendered pictures/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 9.5ms (Views: 8.6ms | Models: 0.040ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:16:18 -0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:16:18 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:16:18 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:16:18 -0200
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:16:18 -0200
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2014-11-05 22:17:09 -0200
+Processing by PicturesController#index as HTML
+  Rendered layouts/_search.html.haml (0.9ms)
+  [1m[36mSQL (0.041ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id" LIMIT 5[0m
+  Rendered pictures/index.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 12.6ms (Views: 12.0ms | Models: 0.041ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:09 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:09 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:09 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:09 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:09 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures/1" for 127.0.0.1 at 2014-11-05 22:17:13 -0200
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSQL (0.050ms)[0m  SELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1
+  [1m[36mSQL (0.040ms)[0m  [1mSELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"[0m
+  Rendered comments/_comment.html.haml (1.3ms)
+  [1m[35mSQL (0.053ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1
+  [1m[36mSQL (0.042ms)[0m  [1mSELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"[0m
+  Rendered comments/_comments_table.html.haml (5.9ms)
+  Rendered pictures/show.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 18.5ms (Views: 16.0ms | Models: 0.185ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:13 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:13 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:13 -0200
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:13 -0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:13 -0200
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2014-11-05 22:17:38 -0200
+Processing by PicturesController#index as HTML
+  Rendered layouts/_search.html.haml (1.0ms)
+  [1m[35mSQL (0.038ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id" LIMIT 5
+  Rendered pictures/index.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 13.1ms (Views: 12.3ms | Models: 0.038ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:38 -0200
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:38 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:38 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:38 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:38 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures/new" for 127.0.0.1 at 2014-11-05 22:17:41 -0200
+Processing by PicturesController#new as HTML
+  Rendered pictures/_form.html.haml (6.8ms)
+  Rendered pictures/new.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 12.1ms (Views: 11.8ms | Models: 0.000ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:41 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:41 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:41 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:41 -0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:41 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures/new" for 127.0.0.1 at 2014-11-05 22:17:59 -0200
+Processing by PicturesController#new as HTML
+  Rendered pictures/_form.html.haml (1.4ms)
+  Rendered pictures/new.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 5.9ms (Views: 5.7ms | Models: 0.000ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:59 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:59 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:59 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:59 -0200
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:17:59 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2014-11-05 22:18:01 -0200
+Processing by PicturesController#index as HTML
+  Rendered layouts/_search.html.haml (0.9ms)
+  [1m[36mSQL (0.091ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id" LIMIT 5[0m
+  Rendered pictures/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 12.7ms (Views: 11.9ms | Models: 0.091ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:02 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:02 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:02 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:02 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:02 -0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/pictures/new" for 127.0.0.1 at 2014-11-05 22:18:03 -0200
+Processing by PicturesController#new as HTML
+  Rendered pictures/_form.html.haml (2.0ms)
+  Rendered pictures/new.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 8.9ms (Views: 8.6ms | Models: 0.000ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:03 -0200
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:03 -0200
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:03 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:03 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:03 -0200
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2014-11-05 22:18:16 -0200
+Processing by PicturesController#index as HTML
+  Rendered layouts/_search.html.haml (56.7ms)
+  [1m[35mSQL (0.050ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id" LIMIT 5
+  Rendered pictures/index.html.haml within layouts/application (63.9ms)
+Completed 200 OK in 68.0ms (Views: 67.5ms | Models: 0.050ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:16 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:16 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:16 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:16 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:16 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures/new" for 127.0.0.1 at 2014-11-05 22:18:18 -0200
+Processing by PicturesController#new as HTML
+  Rendered pictures/_form.html.haml (1.5ms)
+  Rendered pictures/new.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 7.3ms (Views: 7.0ms | Models: 0.000ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:18 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:18 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:18 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:18 -0200
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:18 -0200
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started POST "/pictures" for 127.0.0.1 at 2014-11-05 22:18:46 -0200
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "picture"=>{"title"=>"eeeee", "description"=>"eeeeee", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fda650615c0 @original_filename="mendls.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"picture[file]\"; filename=\"mendls.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/t2/hxq7ws5j7czd834v99lh5sd00000gn/T/RackMultipart20141105-38792-19flax2>>}, "commit"=>"Save"}
+  [1m[36mSQL (1.801ms)[0m  [1mINSERT INTO "pictures" ("title", "description", "file") VALUES ('eeeee', 'eeeeee', 'mendls.jpg')[0m
+Redirected to http://localhost:3000/pictures/2
+Completed 302 Found in 7.7ms
+
+
+Started GET "/pictures/2" for 127.0.0.1 at 2014-11-05 22:18:46 -0200
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mSQL (0.040ms)[0m  SELECT "id", "title", "file" FROM "pictures" WHERE "id" = 2 LIMIT 1
+  [1m[36mSQL (0.041ms)[0m  [1mSELECT "id", "description" FROM "pictures" WHERE "id" = 2 ORDER BY "id"[0m
+  Rendered comments/_comment.html.haml (1.4ms)
+  [1m[35mSQL (0.043ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "picture_id" = 2
+  [1m[36mSQL (0.025ms)[0m  [1mSELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 2 ORDER BY "id"[0m
+  Rendered comments/_comments_table.html.haml (1.1ms)
+  Rendered pictures/show.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 16.9ms (Views: 15.0ms | Models: 1.950ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:46 -0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:46 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:46 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:46 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:18:46 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-11-05 22:18:53 -0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "comment"=>{"picture_id"=>"2", "content"=>"test"}, "commit"=>"Post"}
+  [1m[35mSQL (0.041ms)[0m  SELECT "id", "title", "file" FROM "pictures" WHERE "id" = 2 LIMIT 1
+  [1m[36mSQL (0.045ms)[0m  [1mSELECT "id", "description" FROM "pictures" WHERE "id" = 2 ORDER BY "id"[0m
+  [1m[35mSQL (1.244ms)[0m  INSERT INTO "comments" ("content", "picture_id") VALUES ('test', 2)
+  [1m[36mSQL (0.053ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 2[0m
+  [1m[35mSQL (0.037ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 2 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (4.9ms)
+  Rendered comments/_comment.html.haml (4.2ms)
+  Rendered comments/create.js.haml (12.9ms)
+Completed 200 OK in 47.7ms (Views: 40.0ms | Models: 1.420ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-11-05 22:18:58 -0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "comment"=>{"picture_id"=>"2", "content"=>"vvvvv"}, "commit"=>"Post"}
+  [1m[36mSQL (0.054ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 2 LIMIT 1[0m
+  [1m[35mSQL (0.054ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 2 ORDER BY "id"
+  [1m[36mSQL (1.428ms)[0m  [1mINSERT INTO "comments" ("content", "picture_id") VALUES ('vvvvv', 2)[0m
+  [1m[35mSQL (0.048ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "picture_id" = 2
+  [1m[36mSQL (0.033ms)[0m  [1mSELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 2 ORDER BY "id"[0m
+  Rendered comments/_comments_table.html.haml (2.8ms)
+  Rendered comments/_comment.html.haml (1.7ms)
+  Rendered comments/create.js.haml (7.0ms)
+Completed 200 OK in 16.8ms (Views: 8.5ms | Models: 1.617ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-11-05 22:19:02 -0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "comment"=>{"picture_id"=>"2", "content"=>"xxxxx"}, "commit"=>"Post"}
+  [1m[35mSQL (0.124ms)[0m  SELECT "id", "title", "file" FROM "pictures" WHERE "id" = 2 LIMIT 1
+  [1m[36mSQL (0.047ms)[0m  [1mSELECT "id", "description" FROM "pictures" WHERE "id" = 2 ORDER BY "id"[0m
+  [1m[35mSQL (1.320ms)[0m  INSERT INTO "comments" ("content", "picture_id") VALUES ('xxxxx', 2)
+  [1m[36mSQL (0.040ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 2[0m
+  [1m[35mSQL (0.023ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 2 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (1.9ms)
+  Rendered comments/_comment.html.haml (2.3ms)
+  Rendered comments/create.js.haml (6.4ms)
+Completed 200 OK in 16.3ms (Views: 7.9ms | Models: 1.554ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2014-11-05 22:19:04 -0200
+Processing by PicturesController#index as HTML
+  Rendered layouts/_search.html.haml (0.8ms)
+  [1m[36mSQL (0.039ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id" LIMIT 5[0m
+  Rendered pictures/index.html.haml within layouts/application (5.6ms)
+Completed 200 OK in 9.4ms (Views: 8.9ms | Models: 0.039ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:19:04 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:19:04 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:19:04 -0200
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:19:04 -0200
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:19:04 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=eee" for 127.0.0.1 at 2014-11-05 22:19:09 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"eee"}
+  Rendered layouts/_search.html.haml (1.0ms)
+  [1m[35mSQL (0.050ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  [1m[36mSQL (0.048ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  Rendered pictures/index.html.haml within layouts/application (285.3ms)
+Completed 500 Internal Server Error in 287.9ms
+
+ActionView::Template::Error ([404] {"error":"IndexMissingException[[pictures] missing]","status":404}):
+    21:             %td= link_to 'Edit', edit_picture_path(picture)
+    22:             %td= link_to 'Delete', picture, :method => :delete, :data => { :confirm => 'This can\'t be undone' }  
+    23: 
+    24:       = will_paginate @pictures 
+    25:   - else 
+    26: 
+    27:     %h2.h2.well No Pictures! Try uploading some.    
+  app/views/pictures/index.html.haml:24:in `_app_views_pictures_index_html_haml___695625295200404344_70288002110340'
+  app/controllers/pictures_controller.rb:14:in `search'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=eee" for 127.0.0.1 at 2014-11-05 22:20:22 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"eee"}
+  Rendered layouts/_search.html.haml (0.8ms)
+  [1m[35mSQL (0.041ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  [1m[36mSQL (0.027ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  Rendered pictures/index.html.haml within layouts/application (11.7ms)
+Completed 500 Internal Server Error in 13.5ms
+
+ActionView::Template::Error ([404] {"error":"IndexMissingException[[pictures] missing]","status":404}):
+    18:             %td= link_to 'Show', picture
+    19:             %td= link_to 'Edit', edit_picture_path(picture)
+    20:             %td= link_to 'Destroy', picture, :method => :delete, :data => { :confirm => 'Are you sure?' }  
+    21:       = will_paginate @pictures 
+    22:   - else 
+    23:     %h2.h2.well No Pictures! Try uploading some.    
+    24:   %br
+  app/views/pictures/index.html.haml:21:in `_app_views_pictures_index_html_haml___695625295200404344_70287989879620'
+  app/controllers/pictures_controller.rb:14:in `search'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=eee" for 127.0.0.1 at 2014-11-05 22:20:23 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"eee"}
+  Rendered layouts/_search.html.haml (0.8ms)
+  [1m[35mSQL (0.038ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  [1m[36mSQL (0.019ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  Rendered pictures/index.html.haml within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 9.6ms
+
+ActionView::Template::Error ([404] {"error":"IndexMissingException[[pictures] missing]","status":404}):
+    18:             %td= link_to 'Show', picture
+    19:             %td= link_to 'Edit', edit_picture_path(picture)
+    20:             %td= link_to 'Destroy', picture, :method => :delete, :data => { :confirm => 'Are you sure?' }  
+    21:       = will_paginate @pictures 
+    22:   - else 
+    23:     %h2.h2.well No Pictures! Try uploading some.    
+    24:   %br
+  app/views/pictures/index.html.haml:21:in `_app_views_pictures_index_html_haml___695625295200404344_70287989879620'
+  app/controllers/pictures_controller.rb:14:in `search'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.3ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=eee" for 127.0.0.1 at 2014-11-05 22:20:23 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"eee"}
+  Rendered layouts/_search.html.haml (1.3ms)
+  [1m[35mSQL (0.051ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  [1m[36mSQL (0.035ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  Rendered pictures/index.html.haml within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 13.5ms
+
+ActionView::Template::Error ([404] {"error":"IndexMissingException[[pictures] missing]","status":404}):
+    18:             %td= link_to 'Show', picture
+    19:             %td= link_to 'Edit', edit_picture_path(picture)
+    20:             %td= link_to 'Destroy', picture, :method => :delete, :data => { :confirm => 'Are you sure?' }  
+    21:       = will_paginate @pictures 
+    22:   - else 
+    23:     %h2.h2.well No Pictures! Try uploading some.    
+    24:   %br
+  app/views/pictures/index.html.haml:21:in `_app_views_pictures_index_html_haml___695625295200404344_70287989879620'
+  app/controllers/pictures_controller.rb:14:in `search'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.9ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=eee" for 127.0.0.1 at 2014-11-05 22:20:24 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"eee"}
+  Rendered layouts/_search.html.haml (0.8ms)
+  [1m[35mSQL (0.078ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  [1m[36mSQL (0.036ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  Rendered pictures/index.html.haml within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 12.3ms
+
+ActionView::Template::Error ([404] {"error":"IndexMissingException[[pictures] missing]","status":404}):
+    18:             %td= link_to 'Show', picture
+    19:             %td= link_to 'Edit', edit_picture_path(picture)
+    20:             %td= link_to 'Destroy', picture, :method => :delete, :data => { :confirm => 'Are you sure?' }  
+    21:       = will_paginate @pictures 
+    22:   - else 
+    23:     %h2.h2.well No Pictures! Try uploading some.    
+    24:   %br
+  app/views/pictures/index.html.haml:21:in `_app_views_pictures_index_html_haml___695625295200404344_70287989879620'
+  app/controllers/pictures_controller.rb:14:in `search'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.1ms)
+[datamapper] Setting up the "development" environment:
+[datamapper] Setting up :default repository: '/Users/raphaelmiranda/projects/rails-challenge/db/samplerb_development.db' on sqlite
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=eee" for 127.0.0.1 at 2014-11-05 22:29:35 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"eee"}
+  Rendered layouts/_search.html.haml (2.1ms)
+  [1m[36mSQL (0.205ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  [1m[35mSQL (0.020ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  Rendered pictures/index.html.haml within layouts/application (665.0ms)
+Completed 500 Internal Server Error in 680.0ms
+
+ActionView::Template::Error (getaddrinfo: nodename nor servname provided, or not known):
+    21:             %td= link_to 'Edit', edit_picture_path(picture)
+    22:             %td= link_to 'Delete', picture, :method => :delete, :data => { :confirm => 'This can\'t be undone' }  
+    23: 
+    24:       = will_paginate @pictures 
+    25:   - else 
+    26: 
+    27:     %h2.h2.well No Pictures! Try uploading some.    
+  app/views/pictures/index.html.haml:24:in `_app_views_pictures_index_html_haml__3406742066944071290_70339387984740'
+  app/controllers/pictures_controller.rb:14:in `search'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.8ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=eee" for 127.0.0.1 at 2014-11-05 22:29:55 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"eee"}
+  Rendered layouts/_search.html.haml (0.8ms)
+  [1m[36mSQL (0.038ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  [1m[35mSQL (0.023ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  Rendered pictures/index.html.haml within layouts/application (24.0ms)
+Completed 500 Internal Server Error in 25.8ms
+
+ActionView::Template::Error (getaddrinfo: nodename nor servname provided, or not known):
+    21:             %td= link_to 'Edit', edit_picture_path(picture)
+    22:             %td= link_to 'Delete', picture, :method => :delete, :data => { :confirm => 'This can\'t be undone' }  
+    23: 
+    24:       = will_paginate @pictures 
+    25:   - else 
+    26: 
+    27:     %h2.h2.well No Pictures! Try uploading some.    
+  app/views/pictures/index.html.haml:24:in `_app_views_pictures_index_html_haml__3406742066944071290_70339387984740'
+  app/controllers/pictures_controller.rb:14:in `search'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.6ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=eee" for 127.0.0.1 at 2014-11-05 22:29:56 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"eee"}
+  Rendered layouts/_search.html.haml (0.7ms)
+  [1m[36mSQL (0.038ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  [1m[35mSQL (0.019ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  Rendered pictures/index.html.haml within layouts/application (26.7ms)
+Completed 500 Internal Server Error in 28.3ms
+
+ActionView::Template::Error (getaddrinfo: nodename nor servname provided, or not known):
+    21:             %td= link_to 'Edit', edit_picture_path(picture)
+    22:             %td= link_to 'Delete', picture, :method => :delete, :data => { :confirm => 'This can\'t be undone' }  
+    23: 
+    24:       = will_paginate @pictures 
+    25:   - else 
+    26: 
+    27:     %h2.h2.well No Pictures! Try uploading some.    
+  app/views/pictures/index.html.haml:24:in `_app_views_pictures_index_html_haml__3406742066944071290_70339387984740'
+  app/controllers/pictures_controller.rb:14:in `search'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.2ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=eee" for 127.0.0.1 at 2014-11-05 22:29:56 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"eee"}
+  Rendered layouts/_search.html.haml (1.1ms)
+  [1m[36mSQL (0.040ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  [1m[35mSQL (0.048ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  Rendered pictures/index.html.haml within layouts/application (29.4ms)
+Completed 500 Internal Server Error in 31.3ms
+
+ActionView::Template::Error (getaddrinfo: nodename nor servname provided, or not known):
+    21:             %td= link_to 'Edit', edit_picture_path(picture)
+    22:             %td= link_to 'Delete', picture, :method => :delete, :data => { :confirm => 'This can\'t be undone' }  
+    23: 
+    24:       = will_paginate @pictures 
+    25:   - else 
+    26: 
+    27:     %h2.h2.well No Pictures! Try uploading some.    
+  app/views/pictures/index.html.haml:24:in `_app_views_pictures_index_html_haml__3406742066944071290_70339387984740'
+  app/controllers/pictures_controller.rb:14:in `search'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.8ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=eee" for 127.0.0.1 at 2014-11-05 22:31:23 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"eee"}
+  Rendered layouts/_search.html.haml (1.2ms)
+  [1m[36mSQL (0.070ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  [1m[35mSQL (0.036ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  Rendered pictures/index.html.haml within layouts/application (28.5ms)
+Completed 500 Internal Server Error in 31.7ms
+
+ActionView::Template::Error (getaddrinfo: nodename nor servname provided, or not known):
+    21:             %td= link_to 'Edit', edit_picture_path(picture)
+    22:             %td= link_to 'Delete', picture, :method => :delete, :data => { :confirm => 'This can\'t be undone' }  
+    23: 
+    24:       = will_paginate @pictures 
+    25:   - else 
+    26: 
+    27:     %h2.h2.well No Pictures! Try uploading some.    
+  app/views/pictures/index.html.haml:24:in `_app_views_pictures_index_html_haml__3406742066944071290_70339387984740'
+  app/controllers/pictures_controller.rb:14:in `search'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=eee" for 127.0.0.1 at 2014-11-05 22:31:24 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"eee"}
+  Rendered layouts/_search.html.haml (0.9ms)
+  [1m[36mSQL (0.047ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  [1m[35mSQL (0.043ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  Rendered pictures/index.html.haml within layouts/application (28.1ms)
+Completed 500 Internal Server Error in 30.1ms
+
+ActionView::Template::Error (getaddrinfo: nodename nor servname provided, or not known):
+    21:             %td= link_to 'Edit', edit_picture_path(picture)
+    22:             %td= link_to 'Delete', picture, :method => :delete, :data => { :confirm => 'This can\'t be undone' }  
+    23: 
+    24:       = will_paginate @pictures 
+    25:   - else 
+    26: 
+    27:     %h2.h2.well No Pictures! Try uploading some.    
+  app/views/pictures/index.html.haml:24:in `_app_views_pictures_index_html_haml__3406742066944071290_70339387984740'
+  app/controllers/pictures_controller.rb:14:in `search'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.3ms)
+[datamapper] Setting up the "development" environment:
+[datamapper] Setting up :default repository: '/Users/raphaelmiranda/projects/rails-challenge/db/samplerb_development.db' on sqlite
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=eee" for 127.0.0.1 at 2014-11-05 22:31:33 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"eee"}
+  Rendered layouts/_search.html.haml (2.1ms)
+  [1m[36mSQL (0.226ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  [1m[35mSQL (0.025ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  Rendered pictures/index.html.haml within layouts/application (64.3ms)
+Completed 500 Internal Server Error in 78.0ms
+
+ActionView::Template::Error ([404] {"error":"IndexMissingException[[pictures] missing]","status":404}):
+    21:             %td= link_to 'Edit', edit_picture_path(picture)
+    22:             %td= link_to 'Delete', picture, :method => :delete, :data => { :confirm => 'This can\'t be undone' }  
+    23: 
+    24:       = will_paginate @pictures 
+    25:   - else 
+    26: 
+    27:     %h2.h2.well No Pictures! Try uploading some.    
+  app/views/pictures/index.html.haml:24:in `_app_views_pictures_index_html_haml___1117570252751423166_70139202337300'
+  app/controllers/pictures_controller.rb:14:in `search'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.9ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=eee" for 127.0.0.1 at 2014-11-05 22:32:50 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"eee"}
+  Rendered layouts/_search.html.haml (0.9ms)
+  [1m[36mSQL (0.186ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  [1m[35mSQL (0.044ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  Rendered pictures/index.html.haml within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 14.9ms
+
+ActionView::Template::Error ([404] {"error":"IndexMissingException[[pictures] missing]","status":404}):
+    21:             %td= link_to 'Edit', edit_picture_path(picture)
+    22:             %td= link_to 'Delete', picture, :method => :delete, :data => { :confirm => 'This can\'t be undone' }  
+    23: 
+    24:       = will_paginate @pictures 
+    25:   - else 
+    26: 
+    27:     %h2.h2.well No Pictures! Try uploading some.    
+  app/views/pictures/index.html.haml:24:in `_app_views_pictures_index_html_haml___1117570252751423166_70139202337300'
+  app/controllers/pictures_controller.rb:14:in `search'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.3ms)
+[datamapper] Setting up the "development" environment:
+[datamapper] Setting up :default repository: '/Users/raphaelmiranda/projects/rails-challenge/db/samplerb_development.db' on sqlite
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=eee" for 127.0.0.1 at 2014-11-05 22:33:05 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"eee"}
+  Rendered layouts/_search.html.haml (2.7ms)
+  [1m[36mSQL (0.292ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  [1m[35mSQL (0.044ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  Rendered pictures/index.html.haml within layouts/application (69.7ms)
+Completed 500 Internal Server Error in 83.9ms
+
+ActionView::Template::Error ([404] {"error":"IndexMissingException[[pictures] missing]","status":404}):
+    21:             %td= link_to 'Edit', edit_picture_path(picture)
+    22:             %td= link_to 'Delete', picture, :method => :delete, :data => { :confirm => 'This can\'t be undone' }  
+    23: 
+    24:       = will_paginate @pictures 
+    25:   - else 
+    26: 
+    27:     %h2.h2.well No Pictures! Try uploading some.    
+  app/views/pictures/index.html.haml:24:in `_app_views_pictures_index_html_haml__4289303680975348890_70130167215060'
+  app/controllers/pictures_controller.rb:14:in `search'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+[datamapper] Setting up the "development" environment:
+[datamapper] Setting up :default repository: '/Users/raphaelmiranda/projects/rails-challenge/db/samplerb_development.db' on sqlite
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=eee" for 127.0.0.1 at 2014-11-05 22:34:43 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"eee"}
+  Rendered layouts/_search.html.haml (1.9ms)
+  [1m[36mSQL (0.244ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  [1m[35mSQL (0.027ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  Rendered pictures/index.html.haml within layouts/application (66.1ms)
+Completed 500 Internal Server Error in 84.3ms
+
+ActionView::Template::Error ([404] {"error":"IndexMissingException[[pictures] missing]","status":404}):
+    21:             %td= link_to 'Edit', edit_picture_path(picture)
+    22:             %td= link_to 'Delete', picture, :method => :delete, :data => { :confirm => 'This can\'t be undone' }  
+    23: 
+    24:       = will_paginate @pictures 
+    25:   - else 
+    26: 
+    27:     %h2.h2.well No Pictures! Try uploading some.    
+  app/views/pictures/index.html.haml:24:in `_app_views_pictures_index_html_haml___2195726399570183839_70238997542200'
+  app/controllers/pictures_controller.rb:14:in `search'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.8ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=eee" for 127.0.0.1 at 2014-11-05 22:34:45 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"eee"}
+  Rendered layouts/_search.html.haml (0.8ms)
+  [1m[36mSQL (0.039ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  [1m[35mSQL (0.019ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  Rendered pictures/index.html.haml within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 10.1ms
+
+ActionView::Template::Error ([404] {"error":"IndexMissingException[[pictures] missing]","status":404}):
+    21:             %td= link_to 'Edit', edit_picture_path(picture)
+    22:             %td= link_to 'Delete', picture, :method => :delete, :data => { :confirm => 'This can\'t be undone' }  
+    23: 
+    24:       = will_paginate @pictures 
+    25:   - else 
+    26: 
+    27:     %h2.h2.well No Pictures! Try uploading some.    
+  app/views/pictures/index.html.haml:24:in `_app_views_pictures_index_html_haml___2195726399570183839_70238997542200'
+  app/controllers/pictures_controller.rb:14:in `search'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.2ms)
+[datamapper] Setting up the "development" environment:
+[datamapper] Setting up :default repository: '/Users/raphaelmiranda/projects/rails-challenge/db/samplerb_development.db' on sqlite
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=eee" for 127.0.0.1 at 2014-11-05 22:35:33 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"eee"}
+  Rendered layouts/_search.html.haml (2.3ms)
+  [1m[36mSQL (0.210ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  [1m[35mSQL (0.021ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  Rendered pictures/index.html.haml within layouts/application (72.2ms)
+Completed 500 Internal Server Error in 85.8ms
+
+ActionView::Template::Error (undefined method `info' for true:TrueClass):
+    21:             %td= link_to 'Edit', edit_picture_path(picture)
+    22:             %td= link_to 'Delete', picture, :method => :delete, :data => { :confirm => 'This can\'t be undone' }  
+    23: 
+    24:       = will_paginate @pictures 
+    25:   - else 
+    26: 
+    27:     %h2.h2.well No Pictures! Try uploading some.    
+  app/views/pictures/index.html.haml:24:in `_app_views_pictures_index_html_haml___1374562901398653062_70359443705040'
+  app/controllers/pictures_controller.rb:14:in `search'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.7ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2014-11-05 22:36:25 -0200
+Processing by PicturesController#index as HTML
+  Rendered layouts/_search.html.haml (1.5ms)
+  [1m[36mSQL (0.056ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id" LIMIT 2[0m
+  [1m[35mSQL (0.036ms)[0m  SELECT COUNT(*) FROM "pictures"
+  Rendered pictures/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 61.6ms (Views: 60.6ms | Models: 0.092ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:25 -0200
+Served asset /jquery_ujs.js - 200 OK (8ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:25 -0200
+Served asset /comments.js - 200 OK (2ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:25 -0200
+Served asset /pictures.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:25 -0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:25 -0200
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/pictures/1/edit" for 127.0.0.1 at 2014-11-05 22:36:28 -0200
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.045ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.040ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"
+  Rendered pictures/_form.html.haml (6.6ms)
+  Rendered pictures/edit.html.haml within layouts/application (9.8ms)
+Completed 200 OK in 16.1ms (Views: 14.1ms | Models: 0.085ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:28 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:28 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:28 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:28 -0200
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:28 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/pictures/1" for 127.0.0.1 at 2014-11-05 22:36:31 -0200
+Processing by PicturesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "picture"=>{"title"=>"teste", "description"=>"testessssssd"}, "commit"=>"Save", "id"=>"1"}
+  [1m[36mSQL (0.048ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.024ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"
+  [1m[36mSQL (1.290ms)[0m  [1mUPDATE "pictures" SET "description" = 'testessssssd' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/pictures/1
+Completed 302 Found in 7.1ms
+
+
+Started GET "/pictures/1" for 127.0.0.1 at 2014-11-05 22:36:31 -0200
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSQL (0.043ms)[0m  SELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1
+  [1m[36mSQL (0.043ms)[0m  [1mSELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"[0m
+  Rendered comments/_comment.html.haml (3.1ms)
+  [1m[35mSQL (0.056ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1
+  [1m[36mSQL (0.024ms)[0m  [1mSELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"[0m
+  Rendered comments/_comments_table.html.haml (5.9ms)
+  Rendered pictures/show.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 21.6ms (Views: 19.1ms | Models: 1.528ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:31 -0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:31 -0200
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:31 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:31 -0200
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:31 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2014-11-05 22:36:34 -0200
+Processing by PicturesController#index as HTML
+  Rendered layouts/_search.html.haml (0.7ms)
+  [1m[35mSQL (0.038ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id" LIMIT 2
+  [1m[36mSQL (0.025ms)[0m  [1mSELECT COUNT(*) FROM "pictures"[0m
+  Rendered pictures/index.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 9.8ms (Views: 9.2ms | Models: 0.063ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:35 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:35 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:35 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:35 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:36:35 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=eeeee" for 127.0.0.1 at 2014-11-05 22:36:42 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"eeeee"}
+  Rendered layouts/_search.html.haml (1.6ms)
+  [1m[35mSQL (0.041ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  [1m[36mSQL (0.030ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  Rendered pictures/index.html.haml within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 14.2ms
+
+ActionView::Template::Error (undefined method `info' for true:TrueClass):
+    21:             %td= link_to 'Edit', edit_picture_path(picture)
+    22:             %td= link_to 'Delete', picture, :method => :delete, :data => { :confirm => 'This can\'t be undone' }  
+    23: 
+    24:       = will_paginate @pictures 
+    25:   - else 
+    26: 
+    27:     %h2.h2.well No Pictures! Try uploading some.    
+  app/views/pictures/index.html.haml:24:in `_app_views_pictures_index_html_haml___1374562901398653062_70359443705040'
+  app/controllers/pictures_controller.rb:14:in `search'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.7ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=eeeee" for 127.0.0.1 at 2014-11-05 22:39:39 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"eeeee"}
+  Rendered layouts/_search.html.haml (0.7ms)
+  [1m[35mSQL (0.167ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  [1m[36mSQL (0.029ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  Rendered pictures/index.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 12.5ms (Views: 12.1ms | Models: 0.196ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:39:39 -0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:39:39 -0200
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:39:39 -0200
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:39:39 -0200
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:39:39 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=dddd" for 127.0.0.1 at 2014-11-05 22:39:50 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"dddd"}
+  Rendered layouts/_search.html.haml (1.2ms)
+  [1m[35mSQL (0.050ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  [1m[36mSQL (0.066ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  Rendered pictures/index.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 10.7ms (Views: 10.3ms | Models: 0.116ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:39:50 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:39:50 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:39:50 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:39:50 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:39:50 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures/new" for 127.0.0.1 at 2014-11-05 22:42:37 -0200
+Processing by PicturesController#new as HTML
+  Rendered pictures/_form.html.haml (1.6ms)
+  Rendered pictures/new.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 8.8ms (Views: 8.2ms | Models: 0.000ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:42:37 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:42:37 -0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:42:37 -0200
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:42:37 -0200
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:42:37 -0200
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started POST "/pictures" for 127.0.0.1 at 2014-11-05 22:42:54 -0200
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "picture"=>{"title"=>"mendl", "description"=>"brotherhood", "file"=>#<ActionDispatch::Http::UploadedFile:0x007ffbab402208 @original_filename="mendls.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"picture[file]\"; filename=\"mendls.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/t2/hxq7ws5j7czd834v99lh5sd00000gn/T/RackMultipart20141105-49498-5us2xb>>}, "commit"=>"Save"}
+  [1m[35mSQL (1.456ms)[0m  INSERT INTO "pictures" ("title", "description", "file") VALUES ('mendl', 'brotherhood', 'mendls.jpg')
+Redirected to http://localhost:3000/pictures/3
+Completed 302 Found in 35.6ms
+
+
+Started GET "/pictures/3" for 127.0.0.1 at 2014-11-05 22:42:54 -0200
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSQL (0.040ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 3 LIMIT 1[0m
+  [1m[35mSQL (0.039ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 3 ORDER BY "id"
+  Rendered comments/_comment.html.haml (1.4ms)
+  [1m[36mSQL (0.041ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 3[0m
+  [1m[35mSQL (0.024ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 3 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (1.1ms)
+  Rendered pictures/show.html.haml within layouts/application (22.9ms)
+Completed 200 OK in 43.0ms (Views: 41.2ms | Models: 1.600ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:42:54 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:42:54 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:42:54 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:42:54 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:42:54 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-11-05 22:42:59 -0200
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YaCWaRqWuXhZaS8qecAJ+rK9MgMJFPQI7R9dFycaHlY=", "comment"=>{"picture_id"=>"3", "content"=>"hhhhh"}, "commit"=>"Post"}
+  [1m[36mSQL (0.041ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 3 LIMIT 1[0m
+  [1m[35mSQL (0.095ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 3 ORDER BY "id"
+  [1m[36mSQL (1.415ms)[0m  [1mINSERT INTO "comments" ("content", "picture_id") VALUES ('hhhhh', 3)[0m
+  [1m[35mSQL (0.042ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "picture_id" = 3
+  [1m[36mSQL (0.025ms)[0m  [1mSELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 3 ORDER BY "id"[0m
+  Rendered comments/_comments_table.html.haml (3.1ms)
+  Rendered comments/_comment.html.haml (2.7ms)
+  Rendered comments/create.js.haml (8.8ms)
+Completed 200 OK in 21.0ms (Views: 10.8ms | Models: 1.618ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2014-11-05 22:43:03 -0200
+Processing by PicturesController#index as HTML
+  Rendered layouts/_search.html.haml (0.9ms)
+  [1m[35mSQL (0.040ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id" LIMIT 2
+  Rendered pictures/index.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 10.4ms (Views: 9.4ms | Models: 0.040ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:03 -0200
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:03 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:03 -0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:03 -0200
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:03 -0200
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=+mendl" for 127.0.0.1 at 2014-11-05 22:43:05 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>" mendl"}
+  Rendered layouts/_search.html.haml (1.3ms)
+  [1m[36mSQL (0.048ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  [1m[35mSQL (0.028ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  Rendered pictures/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 42.0ms (Views: 41.6ms | Models: 0.076ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:05 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:05 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:05 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:05 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:05 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=+" for 127.0.0.1 at 2014-11-05 22:43:14 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>" "}
+  Rendered layouts/_search.html.haml (1.2ms)
+  [1m[36mSQL (0.049ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  [1m[35mSQL (0.072ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  Rendered pictures/index.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 11.3ms (Views: 10.9ms | Models: 0.121ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:14 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:14 -0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:14 -0200
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:14 -0200
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:14 -0200
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=+ee" for 127.0.0.1 at 2014-11-05 22:43:20 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>" ee"}
+  Rendered layouts/_search.html.haml (1.2ms)
+  [1m[36mSQL (0.046ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  [1m[35mSQL (0.028ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  Rendered pictures/index.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 9.7ms (Views: 9.3ms | Models: 0.074ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:20 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:20 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:20 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:20 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:43:20 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=+ee" for 127.0.0.1 at 2014-11-05 22:43:49 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>" ee"}
+  Rendered layouts/_search.html.haml (0.9ms)
+  [1m[36mSQL (0.041ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  [1m[35mSQL (0.026ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  Rendered pictures/index.html.haml within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 14.5ms
+
+ActionView::Template::Error (undefined method `info' for true:TrueClass):
+    21:             %td= link_to 'Edit', edit_picture_path(picture)
+    22:             %td= link_to 'Delete', picture, :method => :delete, :data => { :confirm => 'This can\'t be undone' }  
+    23: 
+    24:       = will_paginate @pictures 
+    25:   - else 
+    26: 
+    27:     %h2.h2.well No Pictures! Try uploading some.    
+  app/views/pictures/index.html.haml:24:in `_app_views_pictures_index_html_haml___1374562901398653062_70359443064680'
+  app/controllers/pictures_controller.rb:14:in `search'
+
+
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/raphaelmiranda/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.20/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.3ms)
+
+
+Started GET "/pictures/search?utf8=%E2%9C%93&query=+ee" for 127.0.0.1 at 2014-11-05 22:53:32 -0200
+Processing by PicturesController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>" ee"}
+  Rendered layouts/_search.html.haml (0.8ms)
+  [1m[36mSQL (0.160ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" ORDER BY "id"[0m
+  [1m[35mSQL (0.026ms)[0m  SELECT "id", "title", "file" FROM "pictures" ORDER BY "id"
+  Rendered pictures/index.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 11.9ms (Views: 11.4ms | Models: 0.186ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:53:32 -0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:53:32 -0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:53:32 -0200
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:53:32 -0200
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:53:32 -0200
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/pictures/1" for 127.0.0.1 at 2014-11-05 22:53:34 -0200
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.065ms)[0m  [1mSELECT "id", "title", "file" FROM "pictures" WHERE "id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.039ms)[0m  SELECT "id", "description" FROM "pictures" WHERE "id" = 1 ORDER BY "id"
+  Rendered comments/_comment.html.haml (2.7ms)
+  [1m[36mSQL (0.082ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "picture_id" = 1[0m
+  [1m[35mSQL (0.044ms)[0m  SELECT "id", "content", "picture_id" FROM "comments" WHERE "picture_id" = 1 ORDER BY "id"
+  Rendered comments/_comments_table.html.haml (4.5ms)
+  Rendered pictures/show.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 19.0ms (Views: 16.1ms | Models: 0.230ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 22:53:35 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 22:53:35 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-11-05 22:53:35 -0200
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-11-05 22:53:35 -0200
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 22:53:35 -0200
+Served asset /application.js - 304 Not Modified (0ms)

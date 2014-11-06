@@ -1,0 +1,5 @@
+= form_tag search_pictures_path, method: :get do
+	
+	%p
+		= text_field_tag :query, params[:query], class: "search", placeholder: 'Find'
+		= submit_tag "Find", name: nil

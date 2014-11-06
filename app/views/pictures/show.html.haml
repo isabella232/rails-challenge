@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+	=image_tag @picture.file.to_s, width: "400px", class: "img-thumbnail"
+%p 
+	%b Title:
+	= @picture.title
+%p
+	%b Description:
+	= @picture.description
+
+= link_to 'Edit', edit_picture_path(@picture)
+\|
+= link_to 'Back', pictures_path
+
+.row#comment_form
+	= render 'comments/comment', object: @comment
+.row#comments 
+	= render "comments/comments_table", object: @picture
+
+

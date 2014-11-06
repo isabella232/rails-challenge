@@ -37,6 +37,14 @@ gem 'dm-aggregates',   DM_VERSION
 gem 'dm-timestamps',   DM_VERSION
 gem 'dm-observer',     DM_VERSION
 
+gem 'bootstrap-sass'
+gem 'will_paginate', '~> 3.0'
+gem 'haml-rails'
+gem 'carrierwave-datamapper', :require => 'carrierwave/datamapper'
+gem "elasticsearch", 		git: "git://github.com/elasticsearch/elasticsearch-ruby.git"
+gem 'elasticsearch-model', 	git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
+gem 'elasticsearch-rails', 	git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -58,6 +66,22 @@ gem 'jquery-rails', '~> 2.0.1'
 
 # To use debugger
 # gem 'ruby-debug19', '~> 0.11.6', :require => 'ruby-debug'
+
+group :development, :test do 
+	gem 'capybara'
+	gem 'rspec-rails'
+	gem "factory_girl_rails"
+	gem 'guard'     	#autorun test when there is a change
+	gem 'guard-rspec'
+	gem 'guard-spring'
+	gem 'spring-commands-rspec'
+	gem 'spring-commands-cucumber'
+	gem 'guard-livereload', require: false
+	gem 'rack-livereload' # used with guard livereload
+	gem "faker"
+	gem 'dm-rspec' # datamapper - rspec
+	gem "poltergeist"
+end
 
 group :test do
   # Pretty printed test output
