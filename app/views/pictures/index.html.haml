@@ -21,7 +21,7 @@
             %td= link_to 'Edit', edit_picture_path(picture)
             %td= link_to 'Delete', picture, :method => :delete, :data => { :confirm => 'This can\'t be undone' }  
 
-      -# = will_paginate @pictures 
+      = paginate(@pictures, :params => {:controller => "pictures", :action => 'index'})
   - else 
 
     %h2.h2.well No Pictures! Try uploading some.    

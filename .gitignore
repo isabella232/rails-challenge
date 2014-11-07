@@ -1,2 +1,5 @@
 
 tmp
+public/uploads
+db/samplerb_development.db
+log/development.log

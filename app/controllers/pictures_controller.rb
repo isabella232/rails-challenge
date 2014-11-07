@@ -2,7 +2,11 @@ class PicturesController < ApplicationController
   # GET /pictures
   # GET /pictures.json
   def index
-    @pictures = Picture.paginate(:page => params[:page], :per_page => 2)
+    
+    #@pictures = Picture.paginate(:page => params[:page], :per_page => 2)
+    
+    @pictures = Picture.page(params[:page]).per(2)
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @pictures }
@@ -40,6 +44,10 @@ class PicturesController < ApplicationController
 
   def create
     @picture = Picture.new(params[:picture])
+
+    #Picture.import
+
+    #@picture.__elasticsearch__.index_document
 
     respond_to do |format|
       if @picture.save

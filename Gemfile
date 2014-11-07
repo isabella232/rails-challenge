@@ -38,7 +38,9 @@ gem 'dm-timestamps',   DM_VERSION
 gem 'dm-observer',     DM_VERSION
 
 gem 'bootstrap-sass'
-gem 'will_paginate', '~> 3.0'
+gem 'kaminari'
+gem "bootstrap-kaminari-views"
+
 gem 'haml-rails'
 gem 'carrierwave-datamapper', :require => 'carrierwave/datamapper'
 gem "elasticsearch", 		git: "git://github.com/elasticsearch/elasticsearch-ruby.git"
